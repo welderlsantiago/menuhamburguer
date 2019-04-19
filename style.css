@@ -23,7 +23,6 @@ div{
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    z-index: 1000;
 }
 
 section{
@@ -47,33 +46,26 @@ section{
 .movContent{
     transform: translateY(0vw);
     display: flex;
+    height: 35vh;
 }
 
 @media (max-width: 768px){
     nav{
-        background-color: rgb(51, 48, 48);
         display: flex;
+        transform: translateY(-40vw);
         flex-direction: column;
-        justify-content: space-around;
-        font-family: 'Anton', sans-serif;
-        height: 35vh;
-        align-items: center;
-        transform: translateY(-25vw);
         transition: .8s;
-
     }
     div{
         display: flex;
         padding-right: 15px;
-    }
-    body{
-        
     }
     main{
         background-color: rgb(51, 48, 48);
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
+        z-index: 1000;
     }
 
 }
